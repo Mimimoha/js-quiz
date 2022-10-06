@@ -5,41 +5,63 @@ var questionContainer = document.querySelector("#question-container")
 var questionTitle = document.querySelector(".question-title")
 var optionContainer = document.querySelector(".option-container")
 var score = 0
-var secondsLeft = 10
+var secondsLeft = 120
 var timerInterval;
 var endScreen = document.querySelector('.navigation')
 // an erray of questions, answers and correct answers 
 var quizcontent = [
   {
-    question: "question 1 goes here",
+    question: "In which country to do skydiving on Sunday is illegal for a single woman?",
     answers: [
-      "a. very diffeclt",
-      "B. a little confusing",
-      "C. i dont get it",
-      "D. i wish i never signed up for this course"],
-    correct: "a. very diffeclt"
+      "Florida",
+      "Chicago",
+      "New York",
+      "Minnesota"
+    ],
+    correct: "Florida"
   },
 
   {
-    question: "how 2 difficult is java?",
+    question: "The fear of constipation is known as?",
     answers: [
-      "very diffeclt",
-      "a little confusing",
-      "i dont get it",
-      " i wish i never signed up for this course"],
-    correct: "i dont get it",
+      "Chlamydia",
+      "Coprastastaphobia",
+      "Chikungunya",
+      "Exfixia"
+    ],
+    correct: "Coprastastaphobia",
   },
 
   {
-    question: "how 3 difficult is java?",
+    question: "In which state to swear in front of the corpse is illegal?",
     answers: [
-      "very diffeclt",
-      "a little confusing",
-      "i dont get it",
-      " i wish i never signed up for this course"],
-    correct: "a little confusing"
+      "New jearsey",
+      "Florida",
+      "Texas",
+      "Maryland"
+    ],
+    correct: "Texas"
+  },
+  {
+    question: "In which country it's illegal to eat frogs with fried chicken is illegal?",
+    answers: [
+      "Georgia",
+      "Spain",
+      "France",
+      "Russia"
+    ],
+    correct: "Georgia"
+  },
+  {
+    question: "In which In which state to tease skunks animals is illegal?",
+    answers: [
+      "Minnesota",
+      "Texas",
+      "Colorado",
+      "Hawaii"
+    ],
+    correct: "Minnesota"
   }
-
 ];
 
 var questionIdx = 0
@@ -68,19 +90,20 @@ function checkAnswer() {
   }
   else { console.log("incorrect") }
   questionIdx++
-  if (questionIdx === quizcontent.length){
+  if (questionIdx === quizcontent.length) {
     endQuiz()
   }
   else {
-  deployQuiz()
-}}
+    deployQuiz()
+  }
+}
 // end quiz function and retun score 
-function endQuiz(){
-endScreen.removeAttribute("class", "hide")
-clearInterval (timerInterval)
-questionContainer.setAttribute('class', "hide")
-var scoreCount = document.querySelector(".score")
-scoreCount.textContent="your final score is " + secondsLeft
+function endQuiz() {
+  endScreen.removeAttribute("class", "hide")
+  clearInterval(timerInterval)
+  questionContainer.setAttribute('class', "hide")
+  var scoreCount = document.querySelector(".score")
+  scoreCount.textContent = "your final score is " + secondsLeft
 }
 
 
@@ -114,4 +137,3 @@ startBtn.addEventListener("click", function (event) {
 
 
 
- 
