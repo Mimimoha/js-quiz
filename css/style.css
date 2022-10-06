@@ -1,0 +1,36 @@
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  display: auto 
+}
+
+section {
+padding-top: 20px;
+height: 400px;
+}
+
+.button {
+  background: gray;
+  color: black;
+  cursor: pointer;
+  font-size: 1.5em;
+  display:right;
+  margin-top: 20px;
+}
+
+header {
+  padding: 40px;
+  text-align: left;
+  background: #13293d;
+  color: #fff;
+  font-size: 3.2rem;
+}
+.content, .results {
+font-size: 1.7rem;
+
+}
+.hide {
+display: none;
+
+}
