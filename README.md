@@ -1,4 +1,10 @@
-# js-quiz
+# JavaScrip Quiz
+
+## Description 
+application that will dynamically generate a quiz 
+
+
+
 
 as a devloper i have created a quiz that 
 when the start button is clicked 
