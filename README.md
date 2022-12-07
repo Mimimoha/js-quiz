@@ -1,5 +1,11 @@
-# js-quiz
+# JavaScript Quiz
 
+## Description 
+application that will dynamically generate a quiz page
+
+
+
+## Usage
 as a devloper i have created a quiz that 
 when the start button is clicked 
 then a timer start and the user is presented with a question 
