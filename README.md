@@ -1,4 +1,4 @@
-# JavaScrip Quiz
+# JavaScript Quiz
 
 ## Description 
 application that will dynamically generate a quiz page
