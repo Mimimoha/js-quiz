@@ -11,7 +11,7 @@ var endScreen = document.querySelector('.navigation')
 // an erray of questions, answers and correct answers 
 var quizcontent = [
   {
-    question: "In which country to do skydiving on Sunday is illegal for a single woman?",
+    question: "In which state to do skydiving on Sunday is illegal for a single woman?",
     answers: [
       "Florida",
       "Chicago",
